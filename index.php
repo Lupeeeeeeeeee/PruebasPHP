@@ -65,7 +65,7 @@ Guardar
 
 <hr>
 
-
+<h4 class="text-center text-primary mb-3">Registro</h4>
 
 <table class="table table-hover table-striped text-center align-middle">
 <thead class="table-primary">
@@ -147,4 +147,3 @@ Actualizar
 
 </body>
 </html>
-
