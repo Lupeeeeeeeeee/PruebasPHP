@@ -44,7 +44,7 @@ if (isset($_POST['actualizar'])) {
 <div class="container d-flex justify-content-center align-items-center" style="min-height:100vh;">
 <div class="card shadow-lg p-4" style="width: 1000px; border-radius:20px;">
 
-<h2 class="text-center text-primary mb-4 fw-bold">Lista de Usuarios</h2>
+<h2 class="text-center text-primary mb-4 fw-bold">Sistema CRUD</h2>
 
 <!-- FORM -->
 <form method="POST" class="mb-4">
@@ -65,7 +65,7 @@ Guardar
 
 <hr>
 
-<h4 class="text-center text-primary mb-3">Registro</h4>
+<h4 class="text-center text-primary mb-3">Lista de Usuarios</h4>
 
 <table class="table table-hover table-striped text-center align-middle">
 <thead class="table-primary">
