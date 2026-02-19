@@ -15,7 +15,7 @@ if (isset($_POST['guardar'])) {
     mysqli_stmt_close($stmt);
 }
 
-/* ACTUALIZAR */
+
 if (isset($_POST['actualizar'])) {
 
     $id     = $_POST['id'];
@@ -44,9 +44,9 @@ if (isset($_POST['actualizar'])) {
 <div class="container d-flex justify-content-center align-items-center" style="min-height:100vh;">
 <div class="card shadow-lg p-4" style="width: 1000px; border-radius:20px;">
 
-<h2 class="text-center text-primary mb-4 fw-bold">Sistema CRUD</h2>
+<h2 class="text-center text-primary mb-4 fw-bold">LOL</h2>
 
-<!-- FORM -->
+<!-- FORMULARIO -->
 <form method="POST" class="mb-4">
 <div class="row g-3">
 <div class="col-md-5">
@@ -76,6 +76,7 @@ Guardar
 <th>Acciones</th>
 </tr>
 </thead>
+
 <tbody>
 
 <?php
