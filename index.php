@@ -15,7 +15,7 @@ if (isset($_POST['guardar'])) {
     mysqli_stmt_close($stmt);
 }
 
-
+/* ACTUALIZAR */
 if (isset($_POST['actualizar'])) {
 
     $id     = $_POST['id'];
@@ -34,15 +34,18 @@ if (isset($_POST['actualizar'])) {
 <!DOCTYPE html>
 <html>
 <head>
-<title>CRUD Seguro</title>
+<title>LOL</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body style="background: linear-gradient(135deg,#0f2027,#203a43,#2c5364); min-height:100vh;">
 
-<div class="container d-flex justify-content-center align-items-center" style="min-height:100vh;">
-<div class="card shadow-lg p-4" style="width: 1000px; border-radius:20px;">
+<div class="container py-5">
+<div class="row justify-content-center">
+<div class="col-lg-10">
+
+<div class="card shadow-lg p-4" style="border-radius:20px;">
 
 <h2 class="text-center text-primary mb-4 fw-bold">LOL</h2>
 
@@ -67,7 +70,9 @@ Guardar
 
 <h4 class="text-center text-primary mb-3">Lista de Usuarios</h4>
 
-<table class="table table-hover table-striped text-center align-middle">
+
+<div class="table-responsive">
+<table class="table table-hover table-striped text-center align-middle mb-0">
 <thead class="table-primary">
 <tr>
 <th>ID</th>
@@ -105,44 +110,15 @@ Eliminar
 </td>
 </tr>
 
-<!-- MODAL -->
-<div class="modal fade" id="editarModal<?php echo $fila['id']; ?>">
-<div class="modal-dialog">
-<div class="modal-content">
-<form method="POST">
-<div class="modal-header">
-<h5 class="modal-title">Editar Usuario</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-</div>
-
-<div class="modal-body">
-<input type="hidden" name="id" value="<?php echo $fila['id']; ?>">
-
-<input type="text" name="nombre"
-class="form-control mb-2"
-value="<?php echo htmlspecialchars($fila['nombre']); ?>">
-
-<input type="email" name="email"
-class="form-control"
-value="<?php echo htmlspecialchars($fila['email']); ?>">
-</div>
-
-<div class="modal-footer">
-<button type="submit" name="actualizar"
-class="btn btn-success">
-Actualizar
-</button>
-</div>
-</form>
-</div>
-</div>
-</div>
-
 <?php } ?>
 
 </tbody>
 </table>
+</div>
 
+
+</div>
+</div>
 </div>
 </div>
 
